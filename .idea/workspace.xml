@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8396c57d-1ced-4bdb-94ae-2d1c7e2e15f8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/EngConditionAssessment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/EngConditionAssessment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterlooRegion/Testing.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterlooRegion/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WaterlooRegion/system_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/system_f.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,11 +36,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.updates" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\raymond.mu\Documents\GitHub\EngConditionAssessment\WaterlooRegion" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/WaterlooRegion" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\raymond.mu\Documents\GitHub\EngConditionAssessment\WaterlooRegion" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -126,32 +128,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom" timestamp="1636492345123">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636492345123" />
-    <state width="1899" height="202" key="GridCell.Tab.0.center" timestamp="1636492345123">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.center/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636492345123" />
-    <state width="1899" height="202" key="GridCell.Tab.0.left" timestamp="1636492345123">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.left/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636492345123" />
-    <state width="1899" height="202" key="GridCell.Tab.0.right" timestamp="1636492345123">
-      <screen x="-1920" y="0" width="1920" height="1040" />
-    </state>
-    <state width="1899" height="202" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636492345123" />
-    <state x="461" y="164" key="SettingsEditor" timestamp="1636468506065">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636468506065" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1636479930512">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1636473769529" />
-    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1636479930512" />
   </component>
 </project>

@@ -1,6 +1,9 @@
-import CAFunctions.CAFunctions as ca
 import WaterlooRegion.spreadsheet_f as ss
 
 
-df = ss.get_oxl_sheet('01 Preston - PPE','01 Preston - PPE')
-ss.create_one_excel('Testing','tab',df)
+path = r'/Users/RayDelinmu/Documents' \
+       r'/EngConditionAssessment/WaterlooRegion'
+excel_name = 'WaterData'
+sheet_name = 'sheet1'
+
+ss.combine_excels(path, excel_name, sheet_name)
