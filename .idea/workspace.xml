@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8396c57d-1ced-4bdb-94ae-2d1c7e2e15f8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterlooRegion/Testing.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterlooRegion/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WaterlooRegion/system_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/system_f.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,5 +124,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
