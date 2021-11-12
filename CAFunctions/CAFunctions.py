@@ -828,6 +828,7 @@ def converter_Barrie_ConditionRating(condition_rating):
     else:
         return condition_rating
 
+def sentencegenerator
 #def Analysis_NewDataBase_CommentIdentification():
     # Function to analyze raw comment data from George's database
 
