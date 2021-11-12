@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 import pandas as pd
 from itertools import islice
 import WaterlooRegion.system_f as system
-import CAFunctions.CAFunctions as ca
+# import CAFunctions.CAFunctions as ca
 
 def get_pd_sheet(filename, sheetname):
     excel_name = filename
@@ -43,6 +43,9 @@ def combine_excels(path, workbook_name, tab_name):
 
 
 def update_sheet(df):
+    # Factors for smooth function running: Asset Category, Asset Condition Rating
+    # Asset installation year
+
     for index, asset_input in df.iterrows():
 
         ''' Extract spreadsheet information '''
@@ -55,23 +58,33 @@ def update_sheet(df):
         AssetInspectionCom_Input = asset_input['Inspector Comments']
         AssetLocation_Input = asset_input['Location']
         AssetPhyLocation_Input = asset_input['Physical Location']
+        AssetInstallYear_Input = asset_input['Year of Installation']
 
         '''Condition(s) will allow for a pass'''
-        # if asset category is missing, pass
+        # note: if asset category is missing, pass
         if AssetCategory_Input is None:
             continue
 
         if AssetConditionRating_Input is None:
             continue
 
-        '''Condition Processing'''
-        AssetConditionRating_Input = AssetConditionRating_Input.lower()
-        AssetConditionRating_AG_Output = ca.Converter_UniAssetConditionConversion(AssetConditionRating_Input)
 
-        AssetConditionSentence_Mid = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
+        '''Installation Year Processing'''
+        # note: if the installation is empty, it will not process.
+        if AssetInstallYear_Input is not None:
+            AssetInstallYear_Input = str(AssetInstallYear_Input)
+            AssetInstallYear_Output = AssetInstallYear_Input.split('-')[0]
+            print(AssetInstallYear_Output)
+        #
+        # '''Condition Processing'''
+        # AssetConditionRating_Input = AssetConditionRating_Input.lower()
+        # AssetConditionRating_AG_Output = ca.Converter_UniAssetConditionConversion(AssetConditionRating_Input)
+        #
+        # AssetConditionSentence_Mid = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
+        #
+        # '''Inspection sentence processing'''
+        # AssetInspectionCom_Input = AssetInspectionCom_Input.split('\n')
 
-        '''Inspection sentence processing'''
-        AssetInspectionCom_Input = AssetInspectionCom_Input.split('\n')
 
 
 
