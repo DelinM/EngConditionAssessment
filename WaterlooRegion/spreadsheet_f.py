@@ -2,7 +2,7 @@ from openpyxl import load_workbook
 import pandas as pd
 from itertools import islice
 import WaterlooRegion.system_f as system
-# import CAFunctions.CAFunctions as ca
+import CAFunctions.CAFunctions as ca
 
 def get_pd_sheet(filename, sheetname):
     excel_name = filename
@@ -60,6 +60,7 @@ def update_sheet(df):
         AssetPhyLocation_Input = asset_input['Physical Location']
         AssetInstallYear_Input = asset_input['Year of Installation']
 
+
         '''Condition(s) will allow for a pass'''
         # note: if asset category is missing, pass
         if AssetCategory_Input is None:
@@ -71,16 +72,39 @@ def update_sheet(df):
 
         '''Installation Year Processing'''
         # note: if the installation is empty, it will not process.
+        # output: AssetInstallYear_Output
         if AssetInstallYear_Input is not None:
             AssetInstallYear_Input = str(AssetInstallYear_Input)
             AssetInstallYear_Output = AssetInstallYear_Input.split('-')[0]
-            print(AssetInstallYear_Output)
-        #
-        # '''Condition Processing'''
-        # AssetConditionRating_Input = AssetConditionRating_Input.lower()
-        # AssetConditionRating_AG_Output = ca.Converter_UniAssetConditionConversion(AssetConditionRating_Input)
-        #
-        # AssetConditionSentence_Mid = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
+
+        '''Code Violation and Concern'''
+        AssetCodeViolation_tup = system.get_codeconcern(AssetInspectionCom_Input)
+        AssetCodeBoolean_Output = AssetCodeViolation_tup[0]
+        AssetCodeComment_Output = AssetCodeViolation_tup[1]
+
+        '''Condition Processing'''
+        # AG: Physical Condition Rating
+        AssetConditionRating_Input = AssetConditionRating_Input.lower()
+        AssetConditionRating_AG_Output = ca.Converter_UniAssetConditionConversion(AssetConditionRating_Input)
+        AssetConditionSentence_Mid = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
+
+        '''Condition Sentence Processing'''
+
+
+        '''Performance Rating'''
+        # AI: Performance Condition Rating
+        # AJ: Performance Rating Comment
+        if AssetConditionRating_AG_Output == 1 or 2 or 3:
+            AssetPerformanceRating_Output = AssetConditionRating_AG_Output
+            AssetPerformanceSentence_Output = 'The asset did not have any performance issues.'
+        if AssetConditionRating_AG_Output == 4 or 5 and 'performance' not in AssetInspectionCom_Input:
+            AssetPerformanceRating_Output = 3
+            AssetPerformanceSentence_Output = 'The asset did not have any performance issues.'
+        else:
+            AssetPerformanceRating_Output = 4
+            AssetPerformanceSentence_Output = 'The asset had performance issue.'
+
+
         #
         # '''Inspection sentence processing'''
         # AssetInspectionCom_Input = AssetInspectionCom_Input.split('\n')
