@@ -84,9 +84,8 @@ def update_sheet(df):
 
         '''Condition Processing'''
         # AG: Physical Condition Rating
-        AssetConditionRating_Input = AssetConditionRating_Input.lower()
-        AssetConditionRating_AG_Output = ca.Converter_UniAssetConditionConversion(AssetConditionRating_Input)
-        AssetConditionSentence_Mid = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
+        AssetConditionRating_Output = system.get_conditionR(AssetConditionRating_Input)
+        AssetConditionSentence_Output = 'The asset was in {} condition.'.format(AssetConditionRating_Input)
 
         '''Condition Sentence Processing'''
 
@@ -94,18 +93,11 @@ def update_sheet(df):
         '''Performance Rating'''
         # AI: Performance Condition Rating
         # AJ: Performance Rating Comment
-        if AssetConditionRating_AG_Output == 1 or 2 or 3:
-            AssetPerformanceRating_Output = AssetConditionRating_AG_Output
-            AssetPerformanceSentence_Output = 'The asset did not have any performance issues.'
-        if AssetConditionRating_AG_Output == 4 or 5 and 'performance' not in AssetInspectionCom_Input:
-            AssetPerformanceRating_Output = 3
-            AssetPerformanceSentence_Output = 'The asset did not have any performance issues.'
-        else:
-            AssetPerformanceRating_Output = 4
-            AssetPerformanceSentence_Output = 'The asset had performance issue.'
+        performance_package = system.get_performance(AssetConditionRating_Output, AssetInspectionCom_Input)
+        AssetPerformanceRating_Output = performance_package[0]
+        AssetPerformanceSentence_Output = performance_package[1]
 
 
-        #
         # '''Inspection sentence processing'''
         # AssetInspectionCom_Input = AssetInspectionCom_Input.split('\n')
 

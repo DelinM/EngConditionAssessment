@@ -170,6 +170,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -191,13 +192,15 @@
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state width="1899" height="178" key="GridCell.Tab.0.right/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015096120" />
-    <state x="774" y="0" width="1162" height="1028" key="dock-window-1" timestamp="1637015022016">
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1" timestamp="1637035084412">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="774" y="0" width="1162" height="1028" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015022016" />
-    <state x="4" y="23" width="1482" height="822" key="dock-window-2" timestamp="1637015022016">
+    <state x="953" y="0" width="974" height="1047" key="dock-window-1/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637035084412" />
+    <state x="774" y="0" width="1162" height="1028" key="dock-window-1/0.0.1920.1040@0.0.1920.1040" timestamp="1637019088441" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-2" timestamp="1637033612967">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="4" y="23" width="1482" height="822" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637015022016" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1637033612967" />
+    <state x="-7" y="0" width="974" height="1047" key="dock-window-2/0.0.1920.1040@0.0.1920.1040" timestamp="1637019088441" />
   </component>
 </project>
