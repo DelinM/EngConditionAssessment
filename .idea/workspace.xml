@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8396c57d-1ced-4bdb-94ae-2d1c7e2e15f8" name="Default Changelist" comment="" />
+    <list default="true" id="8396c57d-1ced-4bdb-94ae-2d1c7e2e15f8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" beforeDir="false" afterPath="$PROJECT_DIR$/WaterlooRegion/spreadsheet_f.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

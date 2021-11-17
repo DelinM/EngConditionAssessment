@@ -60,7 +60,6 @@ def update_sheet(df):
         AssetPhyLocation_Input = asset_input['Physical Location']
         AssetInstallYear_Input = asset_input['Year of Installation']
 
-
         '''Condition(s) will allow for a pass'''
         # note: if asset category is missing, pass
         if AssetCategory_Input is None:
