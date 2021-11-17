@@ -89,6 +89,9 @@ def update_sheet(df):
         '''Condition Sentence Processing'''
 
 
+        '''Inspector Date Note'''
+
+
         '''Performance Rating'''
         # AI: Performance Condition Rating
         # AJ: Performance Rating Comment
