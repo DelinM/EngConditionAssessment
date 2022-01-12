@@ -8,7 +8,7 @@ import timeit
 import numpy as np
 
 # Import
-import ConditionAssessment_Functions.CAFunctions as CA
+import CAFunctions.CAFunctions as CA
 
 
 '''
@@ -23,12 +23,12 @@ Update Note: 1. modification of code to make it clear
 start = timeit.default_timer()
 
 # User input information
-facility_name = 'Nobleton SPS'
-file_name = 'RawData\SPS_RAW'
+facility_name = 'North Richmond Hill Coons Road ET'
+file_name = 'RawData\_NRH_RAW'
 
 file_name += '.xlsx'
 sheet_name = 'Sheet1'
-outputname_spreadsheet = 'NSPS_RAW_Processed.xlsx'
+outputname_spreadsheet = 'NRH_Processed.xlsx'
 
 # Set program parameters
 Remove_Keyword = '(Removed)'
