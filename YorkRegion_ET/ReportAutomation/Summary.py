@@ -1,7 +1,7 @@
-import Reporting_Functions.ReportingFunctions as RF
+import ReportingFunctions.ReportingFunctions as RF
 
-action = RF.yorkregion_summarytable('Raw_KCF Inventory Summary.xlsx',
-                   'E:\DelinM_IOS\Operation YorkET\ReportAutomation\RawData'
+action = RF.yorkregion_summarytable('Raw_NRH Inventory Summary.xlsx',
+                   'C:/Users/raymond.mu\Documents\GitHub\EngConditionAssessment\YorkRegion_ET\ReportAutomation\RawData'
                    , 'Sheet1',
-                   'Process_KWHR Inventory Summary_2.xlsx',
-                   'E:\DelinM_IOS\Operation YorkET\ReportAutomation\ProcessedData')
+                   'Process_NRH Inventory Summary.xlsx',
+                   'C:/Users/raymond.mu\Documents\GitHub\EngConditionAssessment\YorkRegion_ET\ReportAutomation\ProcessedData')

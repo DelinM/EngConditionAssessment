@@ -1,7 +1,7 @@
 import docxtpl
 import openpyxl
 import os.path
-import Reporting_Functions.ReportingFunctions as rf
+import ReportingFunctions.ReportingFunctions as rf
 
 from docxtpl import DocxTemplate
 import jinja2
