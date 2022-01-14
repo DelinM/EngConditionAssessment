@@ -521,7 +521,7 @@ def Analysis_AssetRehabTiming(AssetName, Asset_Condition, AssetESL, AssetERSL, P
                 rehab_sentence = ''
             return rehab_sentence, rehab_Timing1, rehab_Timing2
     else:
-        return rehab_sentence, rehab_Timing1 + 1, rehab_Timing2
+        return rehab_sentence, rehab_Timing1, rehab_Timing2
 
 def Analysis_ReplacementYears(AssetERSL,AssetESL, conditionassessmentyear, plannerperiod):
     '''

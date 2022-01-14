@@ -23,12 +23,12 @@ Update Note: 1. modification of code to make it clear
 start = timeit.default_timer()
 
 # User input information
-facility_name = 'North Richmond Hill Coons Road ET'
-file_name = 'RawData\_NRH_RAW'
+facility_name = 'North Richmond Hill Bloomington Road West ET'
+file_name = 'RawData\RHB_RAW'
 
 file_name += '.xlsx'
 sheet_name = 'Sheet1'
-outputname_spreadsheet = 'NRH_Processed.xlsx'
+outputname_spreadsheet = 'RHB_Processed.xlsx'
 
 # Set program parameters
 Remove_Keyword = '(Removed)'
@@ -56,13 +56,13 @@ for index, AssetInput in df_Cleaned.iterrows():
     AssetRehab1Cost_Output = AssetInput['rehabCost1']
     AssetRehab2Cost_Output = AssetInput['rehabCost2']
     AssetTAG_Input = AssetInput['assetTag']
-    AssetLocation_Input = AssetInput['LocationTag']
+    #AssetLocation_Input = AssetInput['LocationTag']
 
     # Make sure that the Asset Tag and Location Tag has 8 digits, overwrite input data
     AssetTAG_Output = CA.converter_FillinNumber(AssetTAG_Input, 8)
-    AssetLocation_Output = CA.converter_FillinNumber(AssetLocation_Input, 8)
+    #AssetLocation_Output = CA.converter_FillinNumber(AssetLocation_Input, 8)
     df_Cleaned.at[index, 'assetTag'] = AssetTAG_Output
-    df_Cleaned.at[index, 'LocationTag'] = AssetLocation_Output
+    #df_Cleaned.at[index, 'LocationTag'] = AssetLocation_Output
 
     # Remove asset 'installationDate' information
     df_Cleaned.at[index, 'installationDate'] = ''
